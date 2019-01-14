@@ -19,15 +19,27 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h3>
-            Made with <IcoMoon icon="heart" />
+            Made with <IcoMoon className="heart" icon="heart" />
           </h3>
+          <span>
+            <div className="display-flex align-items-center">
+              <a href="https://github.com/aykutkardas">
+                <IcoMoon icon="github" /> aykutkardas
+              </a>
+            </div>
+            <div className="display-flex align-items-center">
+              <a href="https://twitter.com/aykutkardas">
+                <IcoMoon icon="twitter" /> aykutkardas
+              </a>
+            </div>
+          </span>
           <p>
-            <label style={{ fontSize: 18 }}>
-              <input type="checkbox" onChange={this.onChange} /> value:{" "}
-              {value.toString()}
+            <label>
+              <input type="checkbox" onChange={this.onChange} />{" "}
+              {"value: " + value.toString()}
             </label>
           </p>
-            <IcoMoon icon={value ? "play3" : "pause2"} />
+          <IcoMoon icon={value ? "play3" : "pause2"} />
         </header>
       </div>
     );
