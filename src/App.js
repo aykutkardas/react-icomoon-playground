@@ -1,24 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import IcoMoon from "react-icomoon";
+import "./App.css";
 
 class App extends Component {
+  state = {
+    value: false
+  };
+
+  onChange = () => {
+    this.setState(prevState => ({
+      value: !prevState.value
+    }));
+  };
+
   render() {
+    const { value } = this.state;
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <h3>
+            Made with <IcoMoon icon="heart" />
+          </h3>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            <label style={{ fontSize: 18 }}>
+              <input type="checkbox" onChange={this.onChange} /> value:{" "}
+              {value.toString()}
+            </label>
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+            <IcoMoon icon={value ? "play3" : "pause2"} />
         </header>
       </div>
     );
