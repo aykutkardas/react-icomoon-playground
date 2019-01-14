@@ -6896,9 +6896,9 @@ react-error-overlay@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.2.tgz#888957b884d4b25b083a82ad550f7aad96585394"
 
-"react-icomoon@https://github.com/aykutkardas/React-IcoMoon":
+react-icomoon@^1.0.1:
   version "1.0.1"
-  resolved "https://github.com/aykutkardas/React-IcoMoon#669da727fb9cd45aea451e57c12495e6f89998b4"
+  resolved "https://registry.yarnpkg.com/react-icomoon/-/react-icomoon-1.0.1.tgz#795cc1177b472ace31eab3f298892e86c65acb65"
   dependencies:
     react "^16.4.1"
 
